@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Arquitectura — Guillermo Prieto 103</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-[#1A1D20] text-white font-sans antialiased selection:bg-[#00FF87] selection:text-black">
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="border-b border-gray-800 bg-[#121416]/90 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#00FF87] rounded-sm flex items-center justify-center text-black font-black text-xl">P</div>
+        <span class="font-bold tracking-wider text-lg">PRISMA <span class="text-[#00FF87]">ARQUITECTURA</span></span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+        <a href="#portafolio" class="hover:text-[#00FF87] transition">Portafolio</a>
+        <a href="#proceso" class="hover:text-[#00FF87] transition">Proceso Constructivo</a>
+        <a href="#ficha" class="hover:text-[#00FF87] transition">Ficha Técnica</a>
+      </nav>
+      <a href="#contacto" class="bg-[#00FF87] text-[#1A1D20] px-5 py-2 rounded-full font-bold text-xs uppercase tracking-wider hover:brightness-110 transition">
+        Contacto
+      </a>
+    </div>
+  </header>
+
+  <!-- SECCIÓN 1: PORTADA & PORTAFOLIO TÉCNICO -->
+  <section id="portafolio" class="py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6 items-start">
+      
+      <!-- HERO PRINCIPAL (RENDER ENSAMBLADO) -->
+      <div class="relative bg-[#121416] rounded-xl overflow-hidden border border-gray-800 min-h-[500px] flex items-end">
+        <img src="portada-jamaica.jpg" alt="Jamaica Industrial - Vista Ensamblada" class="absolute inset-0 w-full h-full object-contain p-4 bg-[#121416]" />
+        <div class="relative z-10 p-6 bg-gradient-to-t from-[#121416] via-[#121416]/80 to-transparent w-full">
+          <span class="text-[#00FF87] text-xs uppercase font-mono font-bold tracking-widest bg-black/60 px-3 py-1 rounded border border-[#00FF87]/30">
+            Nave Industrial 850 m²
+          </span>
+          <h1 class="text-3xl md:text-4xl font-bold mt-2">Guillermo Prieto 103</h1>
+          <p class="text-gray-300 mt-1 text-xs md:text-sm">
+            Ubicación: Zona Jamaica, CDMX | Cubierta: Arcotecho Autosoportante | Entrega: Tiempo Récord (3 Meses)
+          </p>
+        </div>
+      </div>
+
+      <!-- SECCIONES LATERALES TÉCNICAS -->
+      <div class="grid grid-rows-2 gap-6 h-full">
+        
+        <!-- BLOQUE SUPERIOR: PLANO ESTRUCTURAL -->
+        <div class="bg-[#121416] p-4 rounded-xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-1.5 h-4 bg-[#00FF87]"></div>
+              <h2 class="text-xs font-bold tracking-wider uppercase">Plano Estructural</h2>
+            </div>
+            <div class="overflow-hidden rounded border border-gray-800 bg-black/40">
+              <img src="plano-jamaica.jpg" alt="Plano Estructural Completo" class="w-full h-32 object-contain hover:scale-105 transition duration-300" />
+            </div>
+          </div>
+          <p class="text-[11px] text-gray-400 mt-2">Planta general, simetría de marcos HSS y cuadro de datos.</p>
+        </div>
+
+        <!-- BLOQUE INFERIOR: DETALLE ZAPATA AISLADA -->
+        <div class="bg-[#121416] p-4 rounded-xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <div class="w-1.5 h-4 bg-[#00FF87]"></div>
+              <h2 class="text-xs font-bold tracking-wider uppercase">Detalle de Zapata Aislada</h2>
+            </div>
+            <div class="overflow-hidden rounded border border-gray-800 bg-black/40">
+              <img src="zapata-jamaica.jpg" alt="Detalle de Zapata Aislada" class="w-full h-32 object-cover hover:scale-105 transition duration-300" />
+            </div>
+          </div>
+          <p class="text-[11px] text-gray-400 mt-2">Cimentación calculada con parrilla de varilla y armado de dado expuesto.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: PROCESO CONSTRUCTIVO Y FOTOGRAFÍAS DE OBRA -->
+  <section id="proceso" class="py-16 px-6 bg-[#121416] border-y border-gray-800">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="border-l-4 border-[#00FF87] pl-4 mb-12">
+        <span class="text-[#00FF87] text-xs uppercase font-mono tracking-widest font-bold">Rigor Técnico en Campo</span>
+        <h2 class="text-3xl font-bold mt-1">Memoria de Proceso Constructivo</h2>
+        <p class="text-gray-400 text-sm mt-1">Ingeniería aplicada para almacenaje de alta eficiencia.</p>
+      </div>
+
+      <!-- GRID DE PASOS Y FOTOS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- PASO 1 -->
+        <div class="bg-[#1A1D20] p-6 rounded-xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <span class="text-[#00FF87] font-mono text-xs font-bold tracking-widest">01 / CIMENTACIÓN</span>
+            <h3 class="font-bold text-lg mt-1 mb-3">Topografía y Zapatas</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mb-4">
+              Levantamiento topográfico y estudio de mecánica de suelos para el cálculo de secciones. Excavación de cepas, habilitado de parrilla y colado de dados.
+            </p>
+          </div>
+          <div class="rounded overflow-hidden border border-gray-800 h-40">
+            <img src="obra-zapata.jpg" alt="Obra - Cimentación" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- PASO 2 -->
+        <div class="bg-[#1A1D20] p-6 rounded-xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <span class="text-[#00FF87] font-mono text-xs font-bold tracking-widest">02 / ESTRUCTURA & SÍSMICA</span>
+            <h3 class="font-bold text-lg mt-1 mb-3">Marcos HSS y Contraventeos</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mb-4">
+              Habilitado de columnas y vigas perimetrales HSS. Incorporación de contraventeos diagonales antisísmicos para evitar el efecto dominó.
+            </p>
+          </div>
+          <div class="bg-black/30 p-4 rounded border border-gray-800 text-xs text-gray-400 space-y-2 h-40 flex flex-col justify-center">
+            <p><strong class="text-white">▪ Perfiles:</strong> Tubulares HSS Grafito</p>
+            <p><strong class="text-white">▪ Sismo:</strong> Rigidez por diagonalización</p>
+            <p><strong class="text-white">▪ Anclajes:</strong> Placas de alta resistencia</p>
+          </div>
+        </div>
+
+        <!-- PASO 3 -->
+        <div class="bg-[#1A1D20] p-6 rounded-xl border border-gray-800 flex flex-col justify-between">
+          <div>
+            <span class="text-[#00FF87] font-mono text-xs font-bold tracking-widest">03 / CUBIERTA</span>
+            <h3 class="font-bold text-lg mt-1 mb-3">Arcotecho e Iluminación</h3>
+            <p class="text-gray-300 text-xs leading-relaxed mb-4">
+              Rolado e izaje de lámina continua sin apoyos intermedios. Faldones perimetrales y láminas traslúcidas para iluminación natural pasiva.
+            </p>
+          </div>
+          <div class="rounded overflow-hidden border border-gray-800 h-40">
+            <img src="obra-arcotecho.jpg" alt="Obra - Arcotecho" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FICHA DE MÉTRICAS COMPACTA -->
+      <div id="ficha" class="mt-12 bg-[#1A1D20] p-8 rounded-xl border-t-2 border-[#00FF87] flex flex-wrap justify-between items-center gap-6">
+        <div>
+          <span class="text-gray-400 text-xs uppercase font-mono">Eficiencia de Proyecto</span>
+          <h4 class="text-xl font-bold text-white mt-1">Optimizamos un 25% el cronograma planeado</h4>
+          <p class="text-gray-400 text-xs mt-1">Programado a 4 meses — Entregado en tiempo récord con cero filtraciones.</p>
+        </div>
+        <div class="text-right">
+          <span class="text-4xl font-extrabold text-[#00FF87] font-mono">3 MESES</span>
+          <span class="text-gray-400 text-xs block mt-1 uppercase">Tiempo de Ejecución</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA / CONTACTO -->
+  <footer id="contacto" class="py-12 px-6 text-center text-xs text-gray-500 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="text-white font-bold text-sm">PRISMA ARQUITECTURA</p>
+        <p class="mt-1">Diseño contemporáneo con rigor técnico.</p>
+      </div>
+      <p>© 2026 Prisma Arquitectura. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
